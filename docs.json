@@ -18,7 +18,7 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": ["index", "general/dashboard", "ai-features"]
+            "pages": ["index", "general/dashboard"]
           },
           {
             "group": "VocbotAi Enterprise",
@@ -28,7 +28,6 @@
             "group": "Contacts Management CRM",
             "pages": [
               "general/contacts/contacts",
-              "general/contacts/companies",
               {
                 "group": "Segments",
                 "pages": [
