@@ -21,10 +21,6 @@
             "pages": ["index", "general/dashboard"]
           },
           {
-            "group": "VocbotAi Enterprise",
-            "pages": ["general/enterprise/fineTuning", "general/enterprise/rateLimit"]
-          },
-          {
             "group": "Contacts Management CRM",
             "pages": [
               "general/contacts/contacts",
