@@ -265,13 +265,6 @@
             ]
           },
           {
-            "group": "Campaigns",
-            "pages": [
-              "api-reference/campaigns/get",
-              "api-reference/campaigns/audienceList"
-            ]
-          },
-          {
             "group": "Knowladge Base",
             "pages": [
               "api-reference/knowledgebase/get",
