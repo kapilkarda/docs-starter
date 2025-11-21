@@ -887,6 +887,156 @@
           }
         }
       }
+    },
+    
+    "/knowledgeBase/list": {
+      "get": {
+        "description": "Returns all knowladge base from the system that the user has access to",
+        "responses": {
+          "200": {
+            "description": "Knowladge base response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/KnowledgeBase"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/knowledgeBase/create": {
+      "post": {
+        "description": "Creates a new Knowladge base",
+        "requestBody": {
+          "description": "Knowladge base to add",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewKnowladgeBase"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Knowladge base response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/KnowledgeBase"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/knowledgeBase/update?id={id}": {
+      "put": {
+        "description": "Update a knowledge base based on the ID supplied",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The ID of the knowledge base to update"
+          }
+        ],
+        "requestBody": {
+          "description": "Knowledge base to update",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateKnowladgeBase"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Knowledge base response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/KnowledgeBase"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/knowledgeBase/delete?id={id}": {
+      "delete": {
+        "description": "Deletes a single knowledge base based on the ID supplied",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of knowledge base to delete",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Knowledge base deleted",
+            "content": {}
+          },
+          "400": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1539,6 +1689,63 @@
         "allOf": [
           {
             "$ref": "#/components/schemas/Playground"
+          },
+          {
+            "type": "object"
+          }
+        ]
+      },
+      "KnowledgeBase" : {
+        "required": [
+          "title",
+          "language",
+          "data"
+        ],
+        "type": "object",
+        "properties": {
+          "title": {
+            "description": "Knowledge base title.",
+            "type": "string"
+          },
+          "language": {
+            "description": "Knowledge base language.",
+            "enum": ["en"],
+            "type": "string"
+          },
+          "data": {
+            "description": "Question answer array",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "question": {
+                  "type": "string",
+                  "description": "Question of knowladge base"
+                },
+                "answer": {
+                  "type": "string",
+                  "description": "Answer of knowladge base"
+                }
+              },
+              "required": ["question", "answer"]
+            }
+          }
+        }
+      },
+      "NewKnowladgeBase": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/KnowledgeBase"
+          },
+          {
+            "type": "object"
+          }
+        ]
+      },
+      "UpdateKnowladgeBase": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/KnowledgeBase"
           },
           {
             "type": "object"
