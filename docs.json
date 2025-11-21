@@ -268,7 +268,6 @@
             "group": "Campaigns",
             "pages": [
               "api-reference/campaigns/get",
-              "api-reference/campaigns/audienceList",
               "api-reference/campaigns/audienceList"
             ]
           },
