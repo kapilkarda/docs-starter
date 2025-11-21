@@ -268,7 +268,7 @@
             "group": "Campaigns",
             "pages": [
               "api-reference/campaigns/get",
-              "api-reference/campaigns/create",
+              "api-reference/campaigns/audienceList",
               "api-reference/campaigns/audienceList"
             ]
           },
