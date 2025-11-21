@@ -265,12 +265,17 @@
             ]
           },
           {
-            "group": "Knowladge Base",
+            "group": "Segments",
             "pages": [
-              "api-reference/knowledgebase/get",
-              "api-reference/knowledgebase/create",
-              "api-reference/knowledgebase/update",
-              "api-reference/knowledgebase/delete"
+              "api-reference/segments/get",
+              "api-reference/segments/create",
+              "api-reference/segments/update",
+              "api-reference/segments/delete",
+              "api-reference/segments/createAudience",
+              "api-reference/segments/audienceList",
+              "api-reference/segments/updateAudience",
+              "api-reference/segments/deleteAudience",
+              "api-reference/segments/bulkUpload"
             ]
           },
           {
@@ -279,6 +284,15 @@
               "api-reference/campaigns/get",
               "api-reference/campaigns/create",
               "api-reference/campaigns/audienceList"
+            ]
+          },
+          {
+            "group": "Knowladge Base",
+            "pages": [
+              "api-reference/knowledgebase/get",
+              "api-reference/knowledgebase/create",
+              "api-reference/knowledgebase/update",
+              "api-reference/knowledgebase/delete"
             ]
           }
         ]
