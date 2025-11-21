@@ -265,20 +265,6 @@
             ]
           },
           {
-            "group": "Segments",
-            "pages": [
-              "api-reference/segments/get",
-              "api-reference/segments/create",
-              "api-reference/segments/update",
-              "api-reference/segments/delete",
-              "api-reference/segments/createAudience",
-              "api-reference/segments/audienceList",
-              "api-reference/segments/updateAudience",
-              "api-reference/segments/deleteAudience",
-              "api-reference/segments/bulkUpload"
-            ]
-          },
-          {
             "group": "Campaigns",
             "pages": [
               "api-reference/campaigns/get",
