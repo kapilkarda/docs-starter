@@ -888,7 +888,6 @@
         }
       }
     },
-    
     "/knowledgeBase/list": {
       "get": {
         "description": "Returns all knowladge base from the system that the user has access to",
