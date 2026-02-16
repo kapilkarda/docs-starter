@@ -249,6 +249,13 @@
               "api-reference/dialers/update",
               "api-reference/dialers/delete"
             ]
+          },{
+            "group": "Connect via SIP trunking",
+            "pages": [
+              "general/sip/twilio",
+              "general/sip/telnyx",
+              "general/sip/vonage"
+            ]
           },
           {
             "group": "Segments",
