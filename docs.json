@@ -69,14 +69,6 @@
                 ]
               },
               {
-                "group": "Connect via SIP trunking",
-                "pages": [
-                  "general/sip/twilio",
-                  "general/sip/telnyx",
-                  "general/sip/vonage"
-                ]
-              },
-              {
                 "group": "Campaigns",
                 "pages": [
                   "general/campaigns/introduction",
