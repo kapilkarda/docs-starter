@@ -46,7 +46,8 @@
                     "icon": "head-side",
                     "pages": [
                       "general/assistants/createAssistant",
-                      "general/assistants/assistantAction"
+                      "general/assistants/assistantAction",
+                      "general/assistants/webhookIntegration"
                     ]
                   },
                   "general/assistants/testAssistant"
