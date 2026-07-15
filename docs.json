@@ -58,7 +58,8 @@
                 "group": "Dialers",
                 "pages": [
                   "general/dialer/introduction",
-                  "general/dialer/integrateDialer"
+                  "general/dialer/integrateDialer",
+                  "general/dialer/callhippo"
                 ]
               },
               {

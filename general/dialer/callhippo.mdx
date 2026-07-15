@@ -1,0 +1,47 @@
+---
+title: CallHippo
+description: "Connect your CallHippo virtual number to VocbotAI by adding a CallHippo dialer with a Name, Auth Token, and Contact Number"
+icon: "phone"
+---
+
+## Adding a CallHippo Dialer
+
+CallHippo is a cloud telephony provider that supplies virtual calling numbers. Once connected, your assistant can use the CallHippo number to place outbound calls to your customers through your campaigns. When you create a CallHippo dialer you only need to provide three details:
+
+| Field | Description |
+| --- | --- |
+| **Name** | A friendly label to identify this dialer in your account (e.g. `Sales Line`). |
+| **Auth Token** | Your CallHippo API key / access token, used to authenticate outbound calls. |
+| **Contact Number** | The CallHippo virtual number your customers will be called from. |
+
+<Note>
+  Unlike Twilio or SIP, a CallHippo dialer does <span style={{ fontWeight: 700 }}>not</span> require a SID or a SIP termination URI — only the Name, Auth Token, and Contact Number.
+</Note>
+
+<span style={{ color: "#1e40af" }}>
+  Follow these steps to add your CallHippo Dialer
+</span>
+
+<Steps>
+  <Step title="Get your Auth Token from CallHippo">
+    1. Log in to your [CallHippo dashboard](https://app.callhippo.com).
+    2. From the sidebar, open **Integrations**.
+    3. Click **Integrate** (or **API**) and copy your **API Key / Access Token** — this is your Auth Token.
+
+    <Note>Keep your Auth Token secure — it grants API access to your CallHippo account.</Note>
+  </Step>
+
+  <Step title="Get your Contact Number">
+    Purchase or select the virtual number you want your customers to be called from in CallHippo's **Numbers** section. This number is your Contact Number.
+  </Step>
+
+  <Step title="Add the Dialer in VocbotAI">
+    1. In VocbotAI, go to **Call Platforms → Dialers**.
+    2. Click **Add Dialer** and choose **CallHippo** as the dialer type.
+    3. Enter your **Name**, **Auth Token**, and **Contact Number**.
+    4. Click **Save** to confirm.
+  </Step>
+</Steps>
+
+<span style={{ fontWeight: 700 }}>Congratulations</span> 🔥🎉 You have successfully
+added your CallHippo dialer 😎

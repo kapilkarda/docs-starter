@@ -1489,7 +1489,7 @@
           "dialer_type": {
             "description": "Dialer type",
             "type": "string",
-            "enum": ["Twilio","Telnyx","sip"]
+            "enum": ["Twilio","Telnyx","sip","callhippo"]
           },
           "name": {
             "description": "The name of the dialer",
