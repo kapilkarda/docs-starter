@@ -1681,6 +1681,10 @@
           "dialer_id": {
             "description": "Dialer",
             "type": "string"
+          },
+          "description": {
+            "description": "Description",
+            "type": "string"
           }
         }
       },
