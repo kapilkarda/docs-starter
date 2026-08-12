@@ -65,6 +65,8 @@
               {
                 "group": "Connect via SIP trunking",
                 "pages": [
+                  "general/dialer/vobizSipIntegration",
+                  "general/dialer/plivoSipIntegration",
                   "general/sip/twilio",
                   "general/sip/telnyx",
                   "general/sip/vonage"
@@ -93,11 +95,11 @@
                   "general/integrations/salesforce",
                   "general/integrations/smtp",
                   {
-                    "group": "WhatsApp",
+                    "group": "Zeplo",
                     "pages": [
-                      "general/integrations/whatsapp",
-                      "general/integrations/whatsappBusinessApiSetup",
-                      "general/integrations/whatsappAccessToken"
+                      "general/integrations/zeplo",
+                      "general/integrations/zeploSetup",
+                      "general/integrations/zeploTemplates"
                     ]
                   },
                   "general/integrations/gohighlevel",
